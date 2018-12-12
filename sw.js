@@ -1,7 +1,6 @@
 var cacheStorageKey = 'pwa-v1';
 
 var cacheList=[
-    '/',
     'index.html',
     'main.css',
     'bg.jpg'
