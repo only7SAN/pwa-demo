@@ -7,6 +7,7 @@ var cacheList=[
 ];
 
 self.addEventListener('install',e =>{
+    console.log(111)
     e.waitUntil(
         caches.open(cacheStorageKey)
             .then(cache => cache.addAll(cacheList))
@@ -26,6 +27,7 @@ self.addEventListener('fetch',function(e){
 });
 
 self.addEventListener('activate',function(e){
+    console.log(222)
     e.waitUntil(
         //获取所有cache名称
         caches.keys().then(cacheNames => {
