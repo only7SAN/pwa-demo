@@ -1,13 +1,15 @@
 {
-  "name": "一个PWA示例",
-  "short_name": "PWA示例",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#3eaf7c",
+  "name"              : "PWA Website",
+  "short_name"        : "PWA",
+  "description"       : "An example website implementing Progressive Web App technology.",
+  "start_url"         : "/",
+  "display"           : "standalone",
+  "orientation"       : "any",
+  "background_color"  : "#ACE",
+  "theme_color"       : "#ACE",
   "icons": [
     {
-      "src": "/bg.jpg",
+      "src": "/aaa.jpg",
       "sizes": "120x120",
       "type": "image/png"
     }
