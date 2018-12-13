@@ -2,7 +2,7 @@
   "name"              : "一个假的应用",
   "short_name"        : "PWA",
   "description"       : "An example website implementing Progressive Web App technology.",
-  "start_url"         : "/",
+  "start_url"         : "index.html",
   "display"           : "standalone",
   "orientation"       : "any",
   "background_color"  : "#ACE",
