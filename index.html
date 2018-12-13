@@ -33,8 +33,26 @@
 <script>
     // 检测浏览器是否支持SW
     if(navigator.serviceWorker != null){
-        window.addEventListener('DOMContentLoaded', function() {
+        var deferredPrompt = null;
 
+        window.addEventListener('beforeinstallprompt', function (e) {
+            // 将事件返回存储起来
+            deferredPrompt = e;
+
+            // 取消默认事件
+            e.preventDefault();
+
+            setTimeout(function () {
+                if (deferredPrompt != null) {
+                    // 异步触发横幅显示
+                    deferredPrompt.prompt();
+                    deferredPrompt = null;
+                }
+            }, 1000);
+            return false;
+        });
+
+        window.addEventListener('DOMContentLoaded', function() {
             // 执行注册
             navigator.serviceWorker.register('sw.js').then(function(registration) {
                 /*console.log(registration);*/
