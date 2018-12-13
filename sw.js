@@ -1,9 +1,8 @@
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js");
 var cacheStorageKey = 'pwa-v1';
 
 var cacheList=[
     'index.html',
-    'main.css',
+    'aaa.css',
     'icons/android-icon-36x36.png',
     'icons/android-icon-48x48.png',
     'icons/android-icon-72x72.png',
