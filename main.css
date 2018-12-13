@@ -10,6 +10,7 @@
 h3{
     color: white;
     animation: aaa 3s infinite;
+    text-align: center;
 }
 
 @keyframes aaa {
