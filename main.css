@@ -1,3 +1,19 @@
+.app{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: coral;
+}
+
 h3{
-    color: #f00;
+    color: white;
+    animation: aaa 3s infinite;
+}
+
+@keyframes aaa {
+    0% {transform: rotateX(0) }
+    50% {transform: rotateX(360deg) }
+    100% {transform: rotateX(0) }
 }
