@@ -4,8 +4,12 @@ var cacheStorageKey = 'pwa-v1';
 var cacheList=[
     'index.html',
     'main.css',
-    'bg.jpg',
-    'aaa.png'
+    'icons/android-icon-36x36.png',
+    'icons/android-icon-48x48.png',
+    'icons/android-icon-72x72.png',
+    'icons/android-icon-96x96.png',
+    'icons/android-icon-144x144.png',
+    'icons/android-icon-192x192.png'
 ];
 
 self.addEventListener('install',e =>{
