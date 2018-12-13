@@ -1,6 +1,6 @@
 {
   "name"              : "一个假的应用",
-  "short_name"        : "PWA",
+  "short_name"        : "PWA-DEMO",
   "description"       : "An example website implementing Progressive Web App technology.",
   "start_url"         : "index.html",
   "display"           : "standalone",
