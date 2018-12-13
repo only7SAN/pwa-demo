@@ -32,6 +32,19 @@
 <div id="container" style="width: 400px;height: 400px;"></div>
 </body>
 <script>
+    window.addEventListener('beforeinstallprompt', function (e) {
+        // beforeinstallprompt event fired
+        console.log(e);
+        e.userChoice.then(function (choiceResult) {
+            console.log(choiceResult);
+            if (choiceResult.outcome === 'dismissed') {
+                console.log('用户取消安装应用');
+            }
+            else {
+                console.log('用户安装了应用');
+            }
+        });
+    });
     // 检测浏览器是否支持SW
     if(navigator.serviceWorker != null){
         window.addEventListener('DOMContentLoaded', function() {
