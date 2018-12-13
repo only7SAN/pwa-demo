@@ -11,7 +11,7 @@ h3{
     color: white;
     animation: aaa 3s infinite;
     text-align: center;
-    margin-top: 40%;
+    margin-top: 120px;
 }
 
 @keyframes aaa {
